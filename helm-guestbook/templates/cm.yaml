@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argocd-cm
+  namespace: argocd
+  resourceVersion: "835"
+  uid: 1017911a-6f08-46e0-a3ac-d0105df9ae7e
+data:
+  {{- toYaml .Values.main | nindent 2 }}
